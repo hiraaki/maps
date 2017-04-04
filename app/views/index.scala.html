@@ -1,0 +1,20 @@
+@(message: String)
+
+@main(message) {
+
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClQQ5144kE4ywvjc3762fZgYTKPPDMIhA&callback=initMap">
+    </script>
+
+    <div id="floating-panel">
+        <button onclick="addble()">Adicionar Icones</button>
+        <button onclick="removable()">Remover Icones</button><br>
+        <form action="/">
+            <input type="text" name="Rua1" value="Primeira Rua">
+            <input type="text" name="Rua2" value="Segunda Rua">
+            <button type="submit">Pesquisar</button>
+        </form>
+
+    </div>
+}
